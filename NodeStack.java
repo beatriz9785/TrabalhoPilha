@@ -5,13 +5,13 @@ public class NodeStack<E> implements Stack<E> {
 	protected Node<E> top;  // Referencia para o Nodo cabeça
 	
 	public NodeStack(){
-		size = -1;
+		size = 0;
 		top = null;
 	}
 
 	@Override
 	public int size() {
-		return -1;
+		return size;
 	}
 
 	@Override
