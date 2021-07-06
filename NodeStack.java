@@ -36,6 +36,10 @@ public class NodeStack<E> implements Stack<E> {
 
 	@Override
 	public E pop() throws EmptyStackException {
+		//
+		top=null;
+		
+		size--;
 		return null;
 	}
 }
