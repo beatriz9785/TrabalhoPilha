@@ -24,8 +24,13 @@ public class NodeStack<E> implements Stack<E> {
 		return null;
 	}
 
-	@Override
 	public void push(E element) {
+		//criar um novo nó. usar o set element
+		Node<E> v = new Node<>();
+		v.setElement(element);
+		v.setNext(top);//o próximo v é o top
+		top = v;//agora o v é o top
+		size ++;
 		
 	}
 
